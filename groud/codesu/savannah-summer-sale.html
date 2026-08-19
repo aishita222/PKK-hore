@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Savannah & Co. — Summer Sale</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="magnopkk.css">
+</head>
+<body>
+
+<!-- ================= TOP BAR ================= -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 3h10l-1 4H8L7 3z" fill="#EAF7F6"/><path d="M6 8h12l-1.4 12.2a2 2 0 0 1-2 1.8H9.4a2 2 0 0 1-2-1.8L6 8z" fill="#EAF7F6" fill-opacity="0.85"/></svg>
+      </div>
+      Savannah &amp; Co.
+    </div>
+    <button class="topbar-cart" onclick="openDrawer()">
+      Keranjang <span class="cart-count" id="cartCountTop">0</span>
+    </button>
+  </div>
+</div>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="bubbles" id="bubbles"></div>
+  <svg class="palm palm-tl" viewBox="0 0 200 200" fill="none"><path d="M10 190C30 130 60 90 110 60C90 100 80 140 90 190" stroke="#2E8A7A" stroke-width="10" stroke-linecap="round"/><path d="M10 190C50 150 90 130 150 130C110 150 80 170 90 190" stroke="#2E8A7A" stroke-width="10" stroke-linecap="round"/><path d="M10 190C30 150 40 100 30 50C50 90 60 140 90 190" stroke="#256F62" stroke-width="10" stroke-linecap="round"/></svg>
+  <svg class="palm palm-tr" viewBox="0 0 200 200" fill="none"><path d="M10 190C30 130 60 90 110 60C90 100 80 140 90 190" stroke="#2E8A7A" stroke-width="10" stroke-linecap="round"/><path d="M10 190C50 150 90 130 150 130C110 150 80 170 90 190" stroke="#2E8A7A" stroke-width="10" stroke-linecap="round"/></svg>
+
+  <div class="badge-ribbon">
+    <svg viewBox="0 0 100 130" width="100%">
+      <path d="M4 0h92v112l-46 18-46-18V0z" fill="#0B3C46" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+      <circle cx="50" cy="34" r="17" fill="none" stroke="#EAF7F6" stroke-width="2.4"/>
+      <text x="50" y="40" text-anchor="middle" font-family="Baloo 2" font-weight="700" font-size="12" fill="#EAF7F6">100%</text>
+      <text x="50" y="68" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="700" font-size="8.5" fill="#EAF7F6">PREMIUM</text>
+      <text x="50" y="80" text-anchor="middle" font-family="Plus Jakarta Sans" font-weight="700" font-size="8.5" fill="#EAF7F6">INGREDIENTS</text>
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <div class="eyebrow"><span class="dot"></span> Savannah &amp; Co. — Menu Musim Panas</div>
+    <h1>SUMMER<br><span class="accent">SALE!!</span></h1>
+    <div class="hero-sub"><span>ADEM</span><span>SEGAR</span><span>BIKIN NAGIH</span></div>
+    <div class="hero-cta">
+      <button class="btn btn-primary" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">Lihat Menu ↓</button>
+      <a class="btn btn-ghost" id="heroWaBtn" href="#" target="_blank" rel="noopener">Order Cepat via WhatsApp</a>
+    </div>
+  </div>
+
+  <svg class="wave-divider" viewBox="0 0 1440 110" preserveAspectRatio="none" style="height:90px;">
+    <path d="M0,64 C240,110 480,10 720,40 C960,70 1200,110 1440,50 L1440,110 L0,110 Z" fill="#EAF7F6"/>
+  </svg>
+</section>
+
+<!-- ================= MENU ================= -->
+<section class="menu-section" id="menu">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Menu Andalan</div>
+      <h2>Pilih, tambah ke keranjang, pesan langsung</h2>
+      <p>Semua minuman dibuat fresh dengan es batu penuh dan bahan premium. Tap “+ Keranjang”, lalu selesaikan pesanan langsung ke WhatsApp kami.</p>
+    </div>
+
+    <div class="grid" id="productGrid"></div>
+  </div>
+</section>
+
+<!-- ================= STRIP ================= -->
+<div class="strip">
+  <div class="strip-inner">
+    <div class="strip-item">
+      <div class="ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2v6M12 16v6M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M16 12h6M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2" stroke="#F3A15A" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </div>
+      <div><b>100% Bahan Premium</b><span>Buah dan susu segar, tanpa kompromi rasa.</span></div>
+    </div>
+    <div class="strip-item">
+      <div class="ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 21c4-4 8-7.5 8-12a8 8 0 1 0-16 0c0 4.5 4 8 8 12z" stroke="#4C9CB0" stroke-width="1.8"/></svg>
+      </div>
+      <div><b>Es Penuh, Selalu Dingin</b><span>Diracik saat kamu pesan, bukan sebelumnya.</span></div>
+    </div>
+    <div class="strip-item">
+      <div class="ico">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 12l5 5L21 6" stroke="#E8546B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div><b>Pesan Praktis</b><span>Langsung chat WhatsApp, tanpa app tambahan.</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <div class="brand-mark">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M7 3h10l-1 4H8L7 3z" fill="#EAF7F6"/><path d="M6 8h12l-1.4 12.2a2 2 0 0 1-2 1.8H9.4a2 2 0 0 1-2-1.8L6 8z" fill="#EAF7F6" fill-opacity="0.85"/></svg>
+          </div>
+          Savannah &amp; Co.
+        </div>
+        <p>Minuman segar musim panas, dibuat langsung saat kamu pesan. Adem, segar, dan bikin nagih tiap tegukan.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Kunjungi Kami</h4>
+        <a href="https://instagram.com/realsavannahcorpo" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          @realsavannahcorpo
+        </a>
+        <div class="row">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.4 7-12.6A7 7 0 0 0 5 9.4C5 14.6 12 22 12 22z" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="9.4" r="2.4" stroke="currentColor" stroke-width="1.8"/></svg>
+          Jl. Rambutan 123
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Hubungi Kami</h4>
+        <a href="#" id="footerWaBtn" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-7.4 7-12.6A7 7 0 0 0 5 9.4C5 14.6 12 22 12 22z" stroke="currentColor" stroke-width="0" /><path d="M20.5 3.5A11 11 0 1 0 5 20l-1.5 4 4-1.4A11 11 0 0 0 20.5 3.5z" stroke="currentColor" stroke-width="1.8"/></svg>
+          0812-1123-890
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Savannah &amp; Co. — Semua rasa musim panas, satu genggaman.</span>
+      <span>Dibuat dengan "cinta" untuk pelanggan setia kami.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ================= CART DRAWER ================= -->
+<div class="overlay" id="overlay" onclick="closeDrawer()"></div>
+<div class="drawer" id="drawer">
+  <div class="drawer-head">
+    <h3>Keranjang Kamu</h3>
+    <button class="drawer-close" onclick="closeDrawer()">✕</button>
+  </div>
+  <div class="drawer-body" id="drawerBody">
+    <div class="drawer-empty">Keranjang masih kosong.<br>Yuk pilih minuman favoritmu 🍹</div>
+  </div>
+  <div class="drawer-foot">
+    <div class="drawer-total"><span>Total</span><span id="drawerTotal">Rp 0</span></div>
+    <div class="drawer-note">Pesan akan dikirim sebagai pesan WhatsApp ke Savannah &amp; Co.</div>
+    <button class="wa-btn" id="drawerWaBtn" disabled>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M20.5 3.5A11 11 0 1 0 5 20l-1.5 4 4-1.4A11 11 0 0 0 20.5 3.5z" fill="white" fill-opacity="0.001" stroke="white" stroke-width="1.6"/><path d="M8.4 7.6c.3-.6.5-.6.8-.6h.6c.2 0 .5 0 .7.5.3.6.9 2 1 2.2.1.2.1.4 0 .6-.1.3-.2.4-.4.6-.2.2-.4.4-.5.6-.2.2-.3.4-.1.7.2.3.9 1.4 1.9 2.3 1.3 1.2 2.4 1.5 2.7 1.7.3.2.5.1.7-.1.2-.2.8-.9 1-1.2.2-.3.4-.3.7-.2.3.1 1.9.9 2.2 1.1.3.2.5.2.6.4.1.2.1 1-.3 1.9-.4.9-2.2 1.7-3 1.7-.8 0-1.6.1-5.4-2.2C6.9 15.3 5.1 12 5 11.8c-.1-.2-1-1.3-1-2.6 0-1.3.7-1.9 1-2.1.2-.3.5-.3.7-.3h.5" fill="white"/></svg>
+      Pesan via WhatsApp
+    </button>
+  </div>
+</div>
+
+<!-- ================= MOBILE STICKY BAR ================= -->
+<div class="mobile-bar" id="mobileBar">
+  <div class="info">Rp <span id="mobileTotal">0</span><span id="mobileCount">0 item</span></div>
+  <button onclick="openDrawer()">Lihat Keranjang</button>
+</div>
+
+<script src="a_little_piece_of_pkk.js"></script>
+</body>
+</html>
