@@ -38,7 +38,7 @@ const products = [
     price: 18000,
     accent: "var(--choco)",
     stageBg: "linear-gradient(160deg, #F1E7DC, #DDC4AE)",
-    image: "../images/choco-milkshake.png"
+    image: "../images/milkshake.png"
   },
   {
     id: "choco-strawberry",
