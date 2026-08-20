@@ -48,6 +48,15 @@ const products = [
     accent: "var(--strawberry-dark)",
     stageBg: "linear-gradient(160deg, #F3E1DE, #E6C2BE)",
     image: "../images/choco-strawberry.png"
+  },
+  {
+    id: "Milkshake",
+    name: "Milkshake",
+    desc: "milkshake milkshake apa yang enak?  handshake",
+    price: 18000,
+    accent: "var(--strawberry-dark)",
+    stageBg: "linear-gradient(160deg, F3E1DE, #E6C2BE)",
+    image: "../images/milkshake.webp"
   }
 ];
 
