@@ -56,7 +56,7 @@ const products = [
     price: 18000,
     accent: "var(--strawberry-dark)",
     stageBg: "linear-gradient(160deg, F3E1DE, #E6C2BE)",
-    image: "../images/milkshake.webp"
+    image: "../images/milkshake.png"
   }
 ];
 
